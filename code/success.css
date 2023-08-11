@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(235, 18%, 26%);
+    font-family: sans-serif;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    max-width: 300px;
+    width: 95%;
+    padding: 3em;
+    border-radius: 15px;
+}
+.container h2{
+    font-size: 2.3rem;
+    font-weight: 750;
+    line-height: 1em;
+    margin: 0.5em 0;
+    color: hsl(232, 31%, 20%);
+}
+.container p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(73, 73, 73);
+    margin-bottom: 2.5em;
+}
+.email-name{
+    color: hsl(232, 31%, 20%);
+    font-weight: 700;
+    opacity: 1;
+}
+button{
+    width: 100%;
+    padding: 0.8em;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background-color: hsl(232, 31%, 20%);
+}
+@media (max-width: 500px) {
+    .container{
+        width: 100%;
+        padding: 2em;
+    }
+}
