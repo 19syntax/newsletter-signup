@@ -32,7 +32,7 @@ body{
 .container-item2 img{
     width: 100%;
 }
-h2{
+.container-item1 h2{
     font-size: 3rem;
     margin-bottom: .5em;
     font-weight: 750;
@@ -86,20 +86,72 @@ input{
 @media (max-width: 500px) {
     *{
         box-sizing: border-box;
+        font-size: 90%;
     }
     .container{
         width: 100%;
-        height: fit-content;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        padding: 2em;
+    }
+    .container-item1 h2{
+        font-size: 2.8rem;
     }
     .container-item2{
         width: 100%;
+        padding: 0;
     }
     .container-item1{
         width: 100%;
+        padding: 0;
     }
     .submit-button{
         font-size: 1.1rem;
         width: 100%;
     }
+}
+.container2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    max-width: 400px;
+    width: 95%;
+    padding: 3em;
+    display: none;
+    border-radius: 15px;
+}
+.container2 h2{
+    font-size: 2.3rem;
+    font-weight: 750;
+    line-height: 1em;
+    margin: 0.5em 0;
+    color: hsl(232, 31%, 20%);
+}
+.container2 p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(73, 73, 73);
+    margin-bottom: 2.5em;
+}
+.email-name{
+    color: hsl(232, 31%, 20%);
+    font-weight: 700;
+    opacity: 1;
+}
+.dismiss-message{
+    width: 100%;
+    padding: 0.8em;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background-color: hsl(232, 31%, 20%);
+}
+@media (max-width: 500px) {
+    .container2{
+        width: 90%;
+        padding: 2em;
+    }
+
 }
